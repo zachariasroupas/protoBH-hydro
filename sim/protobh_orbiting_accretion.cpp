@@ -1,6 +1,6 @@
 //========================================================================================
 // Accretion-disk formation around orbiting stellar holes inside gaseous star clusters
-// Part of the project: "protoBH" — MSCA grant agreement No. 101149270 funded by the E.U.
+// Part of the project: MSCA grant agreement No. 101149270 — ProtoBH. Funded by the E.U.
 // Author: Zacharias Roupas
 // Please cite: 
 // Roupas, Z., to appear (2026)
