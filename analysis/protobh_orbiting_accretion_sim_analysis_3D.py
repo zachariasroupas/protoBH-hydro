@@ -80,9 +80,9 @@ class _Tee:
 # ============================================================
 # CONFIGURATION
 # ============================================================
-DIR_NAME     = "mBH50.0_B0.010_ecc0.00_psi00.00_nR240_nT105_nP240_rho1.0e+07/nu0e+00_NonI1_Rinn5.0e-03_Rout2.00_tend12.00"
-SIM_DATA_DIR = Path(f"/simulation_3D/{DIR_NAME}")
-OUTPUT_DIR   = Path(f"/images_3D/{DIR_NAME}")
+DIR_NAME     = "mBH50.0_B0.010_ecc0.00_psi00.00_nR128_nT105_nP240_rho1.0e+07/nu0e+00_NonI1_Rinn5.0e-03_Rout2.00_tend12.00"
+SIM_DATA_DIR = Path(f"./simulation_3D/{DIR_NAME}")
+OUTPUT_DIR   = Path(f"./images_3D/{DIR_NAME}")
 
 BETA_THRESHOLD = 0.1
 # v_r/v_ff threshold: equipartition condition at beta = BETA_THRESHOLD
@@ -436,7 +436,7 @@ def print_summary(params, prim_files, t_per, j_eq, x2v,
 # ============================================================
 
 def save_fig(fig, name):
-    fig.savefig(OUTPUT_DIR / name, dpi=150, bbox_inches='tight')
+    fig.savefig(OUTPUT_DIR / name, bbox_inches='tight')
     plt.close(fig)
 
 def style_ax(ax, xlabel, ylabel):
