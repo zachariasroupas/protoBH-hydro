@@ -1,0 +1,5 @@
+*.athdf
+*.pyc
+__pycache__/
+data/
+outputs/
