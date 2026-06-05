@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "Please cite both the software and the accompanying paper."
-title: "protoBH-hydro"
+title: "ProtoBH-hydro"
 authors:
   - family-names: Roupas
     given-names: Zacharias
