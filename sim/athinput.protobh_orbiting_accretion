@@ -22,7 +22,7 @@ id         = prim
 <time>
 cfl_number = 0.4
 nlim       = -1
-tlim       = 1.0
+tlim       = 12.0
 integrator = vl2
 xorder     = 2
 ncycle_out = 1000
