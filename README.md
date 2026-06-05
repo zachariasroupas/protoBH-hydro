@@ -1,4 +1,4 @@
-# protoBH-hydro
+# ProtoBH-hydro
 
 Athena++ problem generators and Python analysis tools for hydrodynamic simulations of
 accretion-disk formation around orbiting stellar black holes in gaseous star clusters.
