@@ -4,7 +4,7 @@
 // Author: Zacharias Roupas
 // Please cite: 
 // Roupas, Z., to appear (2026)
-// Code DOI:    https://doi.org/0.5281/zenodo.20557844
+// Code DOI:    https://doi.org/10.5281/zenodo.20557844
 //
 // Built on Athena++ v21.0 (Stone et al. 2020, ApJS 249, 4)
 //========================================================================================
