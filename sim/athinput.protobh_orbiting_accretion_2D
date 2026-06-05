@@ -4,7 +4,7 @@ configure  = --prob=protobh_orbiting_accretion_2D --coord=cylindrical -hdf5
 project    = protoBH — MSCA grant agreement No. 101149270 funded by the E.U.
 author     = Zacharias Roupas
 cite_paper = Roupas, Z., to appear (2026)
-cite_code  = https://doi.org/10.5281/zenodo.XXXXXXX
+cite_code  = https://doi.org/10.5281/zenodo.20557844
 cite_base  = Stone et al. 2020, ApJS 249, 4 (Athena++ v21.0)
 
 <output1>
