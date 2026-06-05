@@ -52,13 +52,13 @@ nx3        = 1
 
 <hydro>
 gamma      = 1.666666666666667
-mu         = 1.0             # mean molacular weight [m_H]
+mu         = 1.0             # mean molecular weight [m_H]
 dfloor     = 1.0e-8
 pfloor     = 1.0e-8
 
 <problem>
 # Output base path
-output_dir = /simulation_2D
+output_dir = ./simulation_2D
 # Cluster and gas
 rho_cluster = 1.0e+7   	 	 # uniform cluster density [M_sol/pc^3]
 epsilon     = 0.3            # star formation efficiency
