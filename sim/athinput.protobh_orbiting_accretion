@@ -1,0 +1,72 @@
+<comment>
+problem    = BH accretion, simple harmonic elliptical orbit, 3D spherical
+configure  = --prob=protobh_orbiting_accretion --coord=spherical_polar -hdf5
+project    = protoBH — MSCA grant agreement No. 101149270 funded by the E.U.
+author     = Zacharias Roupas
+cite_paper = Roupas, Z., to appear (2026)
+cite_code  = https://doi.org/10.5281/zenodo.XXXXXXX
+cite_base  = Stone et al. 2020, ApJS 249, 4 (Athena++ v21.0)
+
+<output1>
+file_type  = hdf5
+variable   = cons
+dt         = 5.0e-02
+id         = cons
+
+<output2>
+file_type  = hdf5
+variable   = prim
+dt         = 5.0e-02
+id         = prim
+
+<time>
+cfl_number = 0.4
+nlim       = -1
+tlim       = 1.0
+integrator = vl2
+xorder     = 2
+ncycle_out = 1000
+
+<mesh>
+nx1        = 128
+nx2        = 105
+nx3        = 240
+x1min      = 5.0e-3
+x1max      = 2.0
+x1rat      = 1.04792112093    # log-spaced: (x1max/x1min)^(1/nx1)
+x2min      = 0.0
+x2max      = 3.1415926535897931e+00
+x3min      = 0.0
+x3max      = 6.283185307179586
+ix1_bc     = outflow          
+ox1_bc     = user             # user outer radial: far-field inflow (time-dependent)
+ix2_bc     = polar
+ox2_bc     = polar
+ix3_bc     = periodic
+ox3_bc     = periodic
+
+<meshblock>
+nx1        = 8
+nx2        = 15
+nx3        = 15
+
+<hydro>
+gamma      = 1.666666666666667
+mu         = 1.0             # mean molecular weight [m_H]
+dfloor     = 1.0e-8
+pfloor     = 1.0e-8
+
+<problem>
+# Output base path
+output_dir = ~/papers/BH_spin/harmonic/data/3D/simulation
+# Cluster and gas
+rho_cluster = 1.0e+7   	 	 # uniform cluster density [M_sol/pc^3]
+epsilon     = 0.3            # star foramtion efficiency
+T_gas       = 1.0e4          # ambient gas temperature [K]
+
+# Black hole
+M_BH       = 50.0            # [M_sun]
+psi_0      = 0.0 		 	 # [rad]  (0 => BH starts at apocenter X = A, Y = 0)
+B          = 0.01            # semi-minor axis [pc]
+ecc        = 0.0             # eccentricity (0 = circular, <1 = ellipse)
+NonInert   = true			 # "true" to activate BH orbiting non-inertial frame
